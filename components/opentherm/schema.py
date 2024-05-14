@@ -682,7 +682,7 @@ SWITCHES: Schema[SwitchSchema] = Schema({
     }),
     "lock_out_reset": SwitchSchema({
         "description": "Boiler Lock-out Reset",
-        "message": "Status",
+        "message": "ASFflags",
         "keep_updated": True,
         "message_data": "flag8_hb_1",
         "default_mode": "restore_default_off"
