@@ -64,6 +64,17 @@ class SensorSchema(EntitySchema):
     state_class: str
 
 SENSORS: Schema[SensorSchema] = Schema({
+    "rel_vent_level": SensorSchema({
+        "description": "Relative vent level",
+        "unit_of_measurement": UNIT_PERCENT,
+        "accuracy_decimals": 2,
+        "icon": "mdi:fan",
+        "state_class": STATE_CLASS_MEASUREMENT,
+        "message": "RelVentLevel",
+        "keep_updated": True,
+        "message_data": "u8",
+    }),
+
     "rel_mod_level": SensorSchema({
         "description": "Relative modulation level",
         "unit_of_measurement": UNIT_PERCENT,
@@ -74,6 +85,7 @@ SENSORS: Schema[SensorSchema] = Schema({
         "keep_updated": True,
         "message_data": "f88",
     }),
+    
     "ch_pressure": SensorSchema({
         "description": "Water pressure in CH circuit",
         "unit_of_measurement": "bar",
