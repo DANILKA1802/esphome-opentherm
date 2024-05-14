@@ -1,8 +1,9 @@
 # Fixed schema.py
 
-fixed:
+fixed but works wrong for me
 - FlameCurrent
 - TboilerHeatExchanger 
+
 
 
 I am using Bosch GAZ 6000W boiler
