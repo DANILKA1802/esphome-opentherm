@@ -72,7 +72,7 @@ SENSORS: Schema[SensorSchema] = Schema({
         "state_class": STATE_CLASS_MEASUREMENT,
         "message": "RelVentLevel",
         "keep_updated": True,
-        "message_data": "u8",
+        "message_data": "u8_hb",
     }),
 
     "rel_mod_level": SensorSchema({
