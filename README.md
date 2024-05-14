@@ -1,5 +1,11 @@
 # Fixed schema.py
 
+fixed:
+
+FlameCurrent
+TboilerHeatExchanger 
+
+
 I am using Bosch GAZ 6000W boiler
 
 
