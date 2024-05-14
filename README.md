@@ -1,3 +1,8 @@
+# Fixed schema.py
+
+I am using Bosch GAZ 6000W boiler
+
+
 # OpenTherm Master for ESPHome
 
 An external ESPHome component to control a boiler (or other supported HVAC appliances) over the OpenTherm protocol. Note that special hardware is required, like the [DIYLESS Master OpenTherm Shield](https://diyless.com/product/master-opentherm-shield) or [Ihor Melnyk's OpenTherm Adapter](http://ihormelnyk.com/opentherm_adapter). This component acts only as an OpenTherm master (i.e. a thermostat or controller) and not as a slave or gateway. You can no longer use your existing thermostat if you control your boiler through ESPHome with this component.
@@ -22,7 +27,7 @@ The OpenTherm Master component is available as an external component in ESPHome 
 
 ```yaml
 external_components:
-  source: github://freebear-nc/esphome-opentherm@main
+  source: github://danilka1802/esphome-opentherm@main
 ```
 
 A forked version of [@ihormelnyk's OpenTherm Library](https://github.com/ihormelnyk/opentherm_library) is also required:
