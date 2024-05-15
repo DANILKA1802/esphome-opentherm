@@ -7,6 +7,26 @@ fixed but works wrong for me
 fixed, but not tested
 - lockout reset
 
+lockout reset usage:
+
+```yaml
+button:
+  - platform: template
+    name: "boiler error reset"
+    on_press:
+      - number.set:
+          id: Rr
+          value: 1
+
+
+number:
+  - platform: opentherm
+    Remote_Request:
+      name: Remote Request
+      id: Rr
+      internal: true
+```
+
 
 I am using Bosch GAZ 6000W boiler
 
