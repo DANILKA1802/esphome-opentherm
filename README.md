@@ -4,6 +4,8 @@ fixed but works wrong for me
 - FlameCurrent
 - TboilerHeatExchanger 
 
+fixed, but not tested
+- lockout reset
 
 
 I am using Bosch GAZ 6000W boiler
