@@ -26,7 +26,7 @@ number:
       id: Rr
       internal: true
 ```
-
+[https://github.com/DANILKA1802/esphome-opentherm/blob/main/RemoteRequest%20description.jpg?raw=true]
 
 I am using Bosch GAZ 6000W boiler
 
