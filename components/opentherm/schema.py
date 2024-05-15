@@ -680,13 +680,6 @@ SWITCHES: Schema[SwitchSchema] = Schema({
         "message_data": "flag8_hb_6",
         "default_mode": "restore_default_off"
     }),
-    "lock_out_reset": SwitchSchema({
-        "description": "Boiler Lock-out Reset",
-        "message": "ASFflags",
-        "keep_updated": True,
-        "message_data": "flag8_hb_1",
-        "default_mode": "restore_default_off"
-    }),
 })
 
 class AutoConfigure(TypedDict):
@@ -789,5 +782,15 @@ INPUTS: Schema[InputSchema] = Schema({
         "message_data": "f88",
         "range": (0, 127),
         "auto_min_value": { "message": "MaxCapacityMinModLevel", "message_data": "u8_lb" },
+    }),
+    "Remote_Request": InputSchema({
+        "description": "Boiler OT Remote Request",
+        "unit_of_measurement": UNIT_EMPTY,
+        "step": 1,
+        "message": "RemoteRequest",
+        "keep_updated": True,
+        "message_data": "u8_hb",
+        "range": (0, 255),
+        "default_mode": "restore_default_off"
     }),
 })
