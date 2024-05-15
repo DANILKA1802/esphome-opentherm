@@ -470,7 +470,6 @@ SENSORS: Schema[SensorSchema] = Schema({
         "unit_of_measurement": UNIT_EMPTY,
         "accuracy_decimals": 0,
         "state_class": STATE_CLASS_NONE,
-        "disabled_by_default": True,
         "message": "RemoteRequest",
         "keep_updated": True,
         "message_data": "u8_lb",
