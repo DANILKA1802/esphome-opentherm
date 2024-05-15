@@ -465,6 +465,16 @@ SENSORS: Schema[SensorSchema] = Schema({
         "keep_updated": False,
         "message_data": "u8_lb",
     }),
+    "rr_response": SensorSchema({
+        "description": "RemoteRequest response",
+        "unit_of_measurement": UNIT_EMPTY,
+        "accuracy_decimals": 0,
+        "state_class": STATE_CLASS_NONE,
+        "disabled_by_default": True,
+        "message": "RemoteRequest",
+        "keep_updated": True,
+        "message_data": "u8_lb",
+    }),
 })
 
 class BinarySensorSchema(EntitySchema):
