@@ -4,7 +4,7 @@ fixed but works wrong for me
 - FlameCurrent
 - TboilerHeatExchanger 
 
-fixed, but not tested yet
+fixed, works good
 - lockout reset
 
 lockout reset usage:
