@@ -20,11 +20,16 @@ button:
 
 
 number:
-  - platform: opentherm
-    Remote_Request:
-      name: Remote Request
-      id: Rr
-      internal: true
+  - platform: template
+    name: "boiler error reset"
+    on_press:
+      - number.set:
+          id: Rr
+          value: 1
+      - delay: 10s
+      - number.set:
+          id: Rr
+          value: 0
 ```
 ![RemoteRequest](https://github.com/DANILKA1802/esphome-opentherm/blob/main/RemoteRequest%20description.jpg?raw=true)
 
